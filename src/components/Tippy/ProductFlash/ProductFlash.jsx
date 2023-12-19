@@ -10,9 +10,14 @@ const ProductFlash = ({img,title,priceNew,priceOld,sell}) => {
                 <img width="170px" height="170px" src={img} alt={title} />
             </div>
             <div className={cx('description_product text-center')} >
-                <p>{title}</p>
-                <h5>{priceNew}</h5>
-                <h5>{priceOld}</h5>
+                <p className={cx('description_product_title')}>{title}</p>
+                <h5 className={cx('description_product_new')}>{priceNew}</h5>
+                <span className={cx('description_product_old')}>
+                    <label>
+                        {priceOld} 
+                    </label>
+                    <small className={cx('description_product_sell')}>-{sell}%</small>
+                </span>
             </div>
         </div>
     );

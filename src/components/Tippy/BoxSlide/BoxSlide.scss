@@ -1,0 +1,133 @@
+.warpper_boxSlide
+{
+    margin-top: 80px;
+    .boxslide_title
+    {
+        margin: 0 auto ;
+        width: 380px;
+        height: 95px;
+        background-image: url("https://www.topzone.vn/images/christmas/desktop/Desk_Tagline.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 60px;
+        .boxslide_link
+        {
+            display: block;
+            text-align: center;
+            height: 100%;
+            color: #fff;
+            .boxslide_link_title
+            {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+        }
+    }
+    .list_productBox
+    {
+        margin: 0 auto;
+        width: 1200px;
+        .item_productBox
+        {
+            width: 280px !important;
+            height: 458px;
+            background: #323232;
+            border-radius: 24px;
+            overflow: hidden;
+            .productBox
+            {
+                padding: 0 0 30px;
+                height: 100%;
+                margin: 0 10px 0 10px;
+                
+                .no-label
+                {
+                    position: relative;
+                    display: block;
+                    width: 52px;
+                    height: 30px;
+                    top: 10px;
+                    left: 20px;
+                    color: #ff9f00;
+                   
+                    border-radius: 100px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    padding: 4px 12px;
+                    text-align: center;
+                }
+                .img_slideBox
+                {
+                    display: block;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    height: 280px;
+                    width: 280px;
+                }
+                .discription_box
+                {
+                    color: #fff;
+                    .discription_box_title
+                    {
+                        display: -webkit-box;
+                        padding: 0 10px;
+                        margin: 12px 0 18px;
+                        text-align: center;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #fff;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .price_box
+                    {
+                        padding: 6px 0;
+                        span{
+                            margin: 6px 0 12px;
+                            display: block;
+                            overflow: hidden;
+                            font-size: 18px;
+                            line-height: 23px;
+                            padding: 0 10px;
+                            color: #fff;
+                            font-weight: 700;
+                            text-align: center;
+                            strike{
+                                margin: 0 8px;
+                            } 
+                            strike,small{
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: 400;
+                            } 
+                        }
+                    }
+                    .orange
+                    {
+                        color: #ff9f00;
+                        padding-bottom: 5px;
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin: 5px 0;
+                        text-align: center;
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: -4px -4px 8px rgba(134,134,134,.2), 4px 4px 8px rgba(28,28,28,.4);
+                transition: box-shadow .3s linear;
+            } 
+            
+        }
+    }
+}
+.slick-list
+{
+    width: 100% !important;
+}
+.label{
+    border: 1px solid #ff9f00;
+}

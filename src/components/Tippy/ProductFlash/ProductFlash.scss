@@ -5,7 +5,6 @@
     background-color: #323232;
     border-radius: 15px;
     padding: 0 5px 10px;
-    // height: 352px;
     .ima_product
     {
         line-height: 195px;
@@ -18,5 +17,37 @@
     {
         font-size: 14px;
         margin-top: 10px;
+        .description_product_title{
+            height: 40px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            margin: 10px auto 5px;
+            overflow: hidden;
+        }
+        .description_product_new{
+            text-align: center;
+            color: #ff9921;
+            display: block;
+            font-size: 18px;
+        }
+        .description_product_old{
+            label{
+                text-align: center;
+                margin: 0 7px;
+                color: #999;
+                text-decoration: line-through;
+                
+            }
+            .description_product_sell{
+                padding: 3px;
+                background: #f70000;
+                color: #fff;
+                border-radius: 3px;
+                font-size: 14px;
+                vertical-align: middle;
+            }
+        }
     }
 }

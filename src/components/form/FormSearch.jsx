@@ -4,7 +4,6 @@ import style from './FormSearch.scss'
 import { Link } from 'react-router-dom';
 const cx = classNames.bind(style)
 const FormSearch = ({setSearchTonggle,setSearchValue,searchValue}) => {
-    
     return (
         <div className={cx('main')}>
             <div className={cx('form_search header_row d-flex align-items-center justify-content-between')}>

@@ -10,7 +10,7 @@ const Layout = ({children,title,description,keywords,author}) => {
     
     
     return (
-        <div style={{background:"#333333"}}>
+        <div style={{background:"#3e3e3f"}}>
             <Helmet>
                 <meta charSet='utf-8' />
                 <meta name='description' content={description} />
@@ -20,7 +20,7 @@ const Layout = ({children,title,description,keywords,author}) => {
             </Helmet>
             <div>
                 <Header/>
-                <main style={{minHeight:'100vh'}}>
+                <main>
                     {children}
                 </main>
                 <Footer/>

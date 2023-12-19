@@ -7,6 +7,7 @@ import { CustomNextArrow,CustomPrevArrow } from '../../hooks/CustomArrow';
 import SliderHeader from '../../Tippy/SliderHeader/SliderHeader';
 import ProductFlash from '../../Tippy/ProductFlash/ProductFlash';
 import { Link } from 'react-router-dom';
+import BoxSlide from '../../Tippy/BoxSlide/BoxSlide';
 const cx = classNames.bind(style)
 
 const tab=[
@@ -23,42 +24,146 @@ const flash = [
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
         priceOld : "10.000.000đ",   
+        sell:"20"
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/60/290326/s16/op-lung-magsafe-iphone-14-pro-max-nhua-trong-apple-mpu73-thumb-650x650.png",
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
         priceOld : "10.000.000đ",   
+        sell:"22"
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/60/290321/s16/op-lung-magsafe-iphone-14-pro-nhua-trong-apple-mpu63-thumb-650x650.png",
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
-        priceOld : "10.000.000đ",   
+        priceOld : "10.000.000đ", 
+        sell:"30"
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/9118/238123/s16/TimerThumb/apple-tv-4k-32gb-mxgy2-(1).png",
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
-        priceOld : "10.000.000đ",   
+        priceOld : "10.000.000đ", 
+        sell:"2"  
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/12979/251656/s16/chan-sac-world-travel-adapter-kit-apple-md837-thumb-1-650x650.png",
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
         priceOld : "10.000.000đ",   
+        sell:"10"
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/289700/s16/iphone-14-pro-max-purple-thumbtz-650x650.png" ,
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
         priceOld : "10.000.000đ",   
+        sell:"15"
     },
     {
         img:"https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/54/290053/s16/airpods-3-hop-sac-khong-day-thumb-650x650.png",
         title:"Ốp lưng iphone 14 pro max",
         priceNew : "10.000.000đ",   
         priceOld : "10.000.000đ",   
+        sell:"19"
+    },
+]
+const iphone = [
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/42/303891/s16/iphone-15-plus-blue-thumbtz-1-650x650.png',
+        title:'iPhone 15 Plus 128GB',
+        priceNew : '25.000.000đ',
+        priceOld : '25.550.000đ',
+        sell : '',
+        free : "Online giá rẻ"
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/42/299033/s16/iphone-15-pro-blue-thumbtz-650x650.png',
+        title:'iPhone 15 Pro 128GB',
+        priceNew : '28.000.000đ',
+        priceOld : '30.550.000đ',
+        sell : '2',
+        free : ""
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/42/223602/s16/iphone-13-pink-thumbtz-650x650.png',
+        title:'iPhone 11 68GB',
+        priceNew : '25.000.000đ',
+        priceOld : '25.550.000đ',
+        sell : '',
+        free : "Online giá rẻ"
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/42/153856/s16/iphone-11-black-thumbtz-650x650.png',
+        title:'iPhone 14 Pro 128GB',
+        priceNew : '25.120.000đ',
+        priceOld : '27.000.000đ',
+        sell : '7',
+        free : ""
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/42/281570/s16/iphone-15-black-thumbtz_0-650x650.png',
+        title:'iPhone 15 128GB',
+        priceNew : '21.000.000đ',
+        priceOld : '20.550.000đ',
+        sell : '4',
+        free : ""
+    },
+]
+const mac = [
+    {
+        path : '/',
+        new:"Mới",
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/44/318230/s16/mac-topzone-promax-black-650x650.png',
+        title:'MacBook Pro 14 inch M3 2023',
+        priceNew : '39.000.000đ',
+        priceOld : '',
+        sell : '',
+        free : ""
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/44/318232/s16/mac-topzone-promax-black-650x650.png',
+        title:'MacBook Pro 14 inch M3 Max 2023',
+        priceNew : '79.550.000đ',
+        priceOld : '',
+        sell : '',
+        free : "Hàng sắp về"
+    },
+    {
+        path : '/',
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/44/318233/s16/mac16-topzone-black-650x650.png',
+        title:'MacBook 16 inch M3 Pro 2023',
+        priceNew : '64.000.000đ',
+        priceOld : '',
+        sell : '',
+        free : ""
+    },
+    {
+        path : '/',
+        new:"Mới",
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/5698/238053/s16/imac-24-xanh-fix-650x650.png',
+        title:'iPhone 14 Pro 128GB',
+        priceNew : '25.120.000đ',
+        priceOld : '27.000.000đ',
+        sell : '7',
+        free : ""
+    },
+    {
+        path : '/',
+        new:"Mới",
+        image:'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/44/309016/s16/mac-air-15-m2-xam-650x650.png',
+        title:'iMac 24 inch M1 2021',
+        priceNew : '31.000.000đ',
+        priceOld : '34.550.000đ',
+        sell : '8',
+        free : ""
     },
 ]
 const HomePage = () => {
@@ -115,7 +220,8 @@ const HomePage = () => {
                                                 img={e.img} 
                                                 title={e.title} 
                                                 priceNew={e.priceNew} 
-                                                priceOld={e.priceOld}/>
+                                                priceOld={e.priceOld}
+                                                sell={e.sell}/>
                                         ))
                                     }
                                 </Slider>
@@ -135,6 +241,10 @@ const HomePage = () => {
                                 </div>
                             ))
                         }
+                    </div>
+                    <div className={cx('main_box')}>
+                        <BoxSlide title={"iPhone"} data={iphone}/>
+                        <BoxSlide title={"Mac"} data={mac}/>
                     </div>
                 </div>
             </div>
