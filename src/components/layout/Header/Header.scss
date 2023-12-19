@@ -1,0 +1,126 @@
+header{
+    position: fixed;
+    z-index: 10000;
+    background-color: #101010;
+    width: 100%;
+    .wrapper
+    {
+        height: 60px;
+        background-color: #101010;
+        color: #fff;
+        max-width: 1200px;
+        min-width: 1024px;
+        height: 60px;
+        margin: auto;
+        
+        .header_container
+        {
+            position: relative;
+            .header_row
+            {
+                transition: .3s;
+                height: 60px;
+                .header_logo_Link
+                {
+                    .img_logo
+                    {
+                        width: 150px;
+                        height: 43px;
+                    }
+                    .img_logoApple
+                    {
+                        width: 64px;
+                        height: 56px;
+                    }
+                }
+                .logo
+                {
+                    display: inline-block;
+                    padding: 0 10px 0 0;
+                    border-right: 1px solid #3b3b3b;
+                    margin-right: 12px;
+                }
+                .ul_header_tab{
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    .li_header_tab
+                    {
+                        width: 12%;
+                        height: 60px;
+                        border: none;
+                        .menu_header
+                        {
+                            display: block;
+                            overflow: hidden;
+                            text-align: center;
+                            padding: 20px 0 19px; 
+                            color: #fff;
+                            font-size: 14px;
+                        }
+                        &:hover{
+                            background-color: #2d2d2d;
+                            transition: background .3s;
+                        }
+                    }
+                }
+                .search_btn
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    vertical-align: middle;
+                    background: #2f3033;
+                    border-radius: 100%;
+                    height: 40px;
+                    padding: 10px;
+                    width: 40px;
+                    position: relative;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #5e5e60;
+                        transition: background .3s;
+                    }
+                    .icon{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                .cart_btn
+                {
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: #2f3033;
+                    border-radius: 100%;
+                    padding: 10px;
+                    margin: 0 0 0 15px;
+                    position: relative;
+                    height: 40px;
+                    width: 40px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #5e5e60;
+                        transition: background .3s;
+                    }
+                    .icon{
+                        width: 14px;
+                        height: 18px;
+                        margin: 2px auto;
+                    }
+                }
+            }
+        }
+        .tran
+        {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            margin-top: 60px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+    }
+}
