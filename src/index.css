@@ -27,3 +27,27 @@ p{
   margin: 0;
   padding: 0;
 }
+
+.custom-prev-arrow
+{
+    position: absolute;
+    left: 50px;
+    background-color:rgba(0,0,0,0.4);
+    z-index: 10;
+    padding: 10px 18px;
+    border-radius: 50%;
+    color: #fff;
+}
+.custom-next-arrow
+{
+    position: absolute;
+    right: 50px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 10;
+    padding: 10px 18px;
+    border-radius: 50%;
+    color: #fff;
+}
+.custom-prev-arrow,.custom-next-arrow:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.product_flash
+{
+    width: 180px;
+    margin: 0 5px 10px;
+    background-color: #323232;
+    border-radius: 15px;
+    padding: 0 5px 10px;
+    // height: 352px;
+    .ima_product
+    {
+        line-height: 195px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 195px;
+    }
+    .description_product
+    {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

@@ -18,6 +18,7 @@ const tab=[
 ]
 const Header = () => {
     const [searchToggle,setSearchTonggle] = useState(false)
+    const [searchValue,setSearchValue] = useState(false)
     return (
         <header id='header'>
             <div className={cx("wrapper")}>
@@ -56,13 +57,16 @@ const Header = () => {
                         </div>
                         </>
                         ) :(
-                            <FormSearch setSearchTonggle={setSearchTonggle}/>
+                            <FormSearch setSearchTonggle={setSearchTonggle} setSearchValue={setSearchValue} searchValue={searchValue}/>
                         )
                     }
 
                 </div>
                 {
-                    searchToggle && (<div className={cx('tran')} id='tran' onClick={()=>setSearchTonggle(false)}></div>)
+                    searchToggle && (<div className={cx('tran')} id='tran' onClick={()=>{
+                        setSearchTonggle(false)
+                        setSearchValue(false)
+                    }}></div>)
                 }
             </div>
         </header>

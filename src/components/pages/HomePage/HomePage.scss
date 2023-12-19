@@ -1,4 +1,95 @@
 .warpper
 {
     padding-top: 60px;
+    position: relative;
+    // .slider_header
+    // {
+        
+    // }
+    .content
+    {
+        background-image: url("https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/topzone/images/christmas/desktop/BG.png");
+        width: 100%;
+        height: 1500px;
+        margin: 20px 0;
+        padding: 0 10px 10px;
+        z-index: -1;
+        object-fit: cover;
+        .content_flash
+        {
+            background-image: url("https://www.topzone.vn/images/christmas/desktop/FS.png");
+            background-size: cover;
+            width: 1200px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 10px 10px 16px 10px;
+            border-radius: 12px;
+            overflow: hidden;
+            .logo_flash
+            {
+                .kq_flash
+                {
+                    span{
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        margin: 0 2px;
+                    }
+                    .flash_hour
+                    {
+                        padding: 4px 8px;
+                        background-color: #000;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .title_flash
+            {
+                
+                .sell_flash
+                {
+                    width: 400px;
+                }
+            }
+            .list_product_flash
+            {
+                position: relative;
+                
+            }
+        }
+    }
+    .list_tabBox
+    {
+        max-width: 1200px;
+        margin: 40px auto 0;
+        .item_tabBox
+        {
+            width: 15%;
+            height: 220px;
+            background-image: url("https://www.topzone.vn/images/christmas/desktop/Desk_BackgroundMenuCate.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            .item_tabBox_Link{
+                text-align: center;
+                display: block;
+                position: relative;
+                .item_tabBox_page
+                {
+                    .item_tabBox_img   
+                    {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                .item_tabBox_title
+                {
+                    color: #fff;
+                    position: absolute;
+                    bottom: -6px;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+        }
+    }
 }
